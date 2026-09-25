@@ -150,7 +150,10 @@ export default function FeedPage() {
     <AppLayout rightSidebar={RightSidebar}>
       <div className="p-4">
         {/* Tabs */}
-        <div className="flex gap-6 mb-6 border-b border-border px-2">
+        <div
+          className="flex gap-6 mb-6 border-b border-border px-2"
+          data-testid="feed-tabs"
+        >
           <button
             onClick={() => setActiveTab("for-you")}
             className={`pb-3 border-b-2 font-bold transition-colors ${
@@ -174,9 +177,12 @@ export default function FeedPage() {
         </div>
 
         {/* Feed */}
-        <div className="space-y-4">
+        <div className="space-y-4" data-testid="feed-list">
           {processedCalls.length === 0 && !isLoading && (
-            <div className="text-center py-10 text-muted-foreground">
+            <div
+              className="text-center py-10 text-muted-foreground"
+              data-testid="feed-empty"
+            >
               {activeTab === "following"
                 ? "Follow users to see their calls here."
                 : "No calls found."}

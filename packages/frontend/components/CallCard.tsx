@@ -184,7 +184,11 @@ export function CallCard({ call, onQuickStake }: CallCardProps) {
 
   return (
     <>
-      <Link href={`/calls/${call.id}`} className="block group">
+      <Link
+        href={`/calls/${call.id}`}
+        className="block group"
+        data-testid="call-card"
+      >
         <div className={`bg-card border border-border rounded-xl p-5 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/5 ${isHot ? 'ring-2 ring-red-400/20 animate-pulse' : ''}`}>
           <div className="flex items-start justify-between mb-3">
             <div className="flex items-center gap-3">
