@@ -96,6 +96,9 @@ importers:
       joi:
         specifier: ^18.1.2
         version: 18.1.2
+      opossum:
+        specifier: ^10.0.0
+        version: 10.0.0
       pg:
         specifier: ^8.16.3
         version: 8.16.3
@@ -154,6 +157,9 @@ importers:
       '@types/node':
         specifier: ^22.10.7
         version: 22.19.3
+      '@types/opossum':
+        specifier: ^8.1.9
+        version: 8.1.9
       '@types/serve-static':
         specifier: 2.2.0
         version: 2.2.0
@@ -3132,6 +3138,9 @@ packages:
 
   '@types/node@22.7.5':
     resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
+
+  '@types/opossum@8.1.9':
+    resolution: {integrity: sha512-Jm/tYxuJFefiwRYs+/EOsUP3ktk0c8siMgAHPLnA4PXF4wKghzcjqf88dY+Xii5jId5Txw4JV0FMKTpjbd7KJA==}
 
   '@types/qs@6.14.0':
     resolution: {integrity: sha512-eOunJqu0K1923aExK6y8p6fsihYEn/BYuQ4g0CxAAgFc4b/ZLN4CrsRZ55srTdqoiLzU2B2evC+apEIxprEzkQ==}
@@ -6307,6 +6316,10 @@ packages:
   opener@1.5.2:
     resolution: {integrity: sha512-ur5UIdyw5Y7yEj9wLzhqXiy6GZ3Mwx0yGI+5sMn2r0N0v3cKJvUmFH5yPP+WXh9e0xfyzyJX95D8l088DNFj7A==}
     hasBin: true
+
+  opossum@10.0.0:
+    resolution: {integrity: sha512-sghtqL8Usj+et06Zui0nyn0R6FFsl7cyuoU+d7MctYU0nbS7Htzjleh+tWohFqk1Rp1srrFwbFa8Vxd0O64w6A==}
+    engines: {node: ^26 || ^24 || ^22}
 
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
@@ -11590,6 +11603,10 @@ snapshots:
     dependencies:
       undici-types: 6.19.8
 
+  '@types/opossum@8.1.9':
+    dependencies:
+      '@types/node': 22.19.3
+
   '@types/qs@6.14.0': {}
 
   '@types/range-parser@1.2.7': {}
@@ -15674,6 +15691,8 @@ snapshots:
   openapi-typescript-helpers@0.0.15: {}
 
   opener@1.5.2: {}
+
+  opossum@10.0.0: {}
 
   optionator@0.9.4:
     dependencies:
